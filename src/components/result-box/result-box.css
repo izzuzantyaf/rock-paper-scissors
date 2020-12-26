@@ -1,0 +1,51 @@
+.overlay {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.result-box {
+    width: 85vw;
+    border-radius: 0.8em;
+    padding: 1em;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.result-box .messages {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+.result-box .choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.result-box .choices button {
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.result-box .choices button.rematch {
+    background-color: rgb(255, 77, 77);
+    color: white;
+    margin-right: 10px;
+}
+
+.result-box .choices button.new-game {
+    background-color: rgb(98, 255, 77);
+    color: white;
+    margin-left: 10px;
+}
+
+@media (min-width:762px) {
+    .result-box {
+        width: 30vw;
+    }
+}

@@ -1,0 +1,26 @@
+.game-layout {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "player1""player2";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.player1 {
+    grid-area: player1;
+    background-color: royalblue;
+}
+
+.player2 {
+    grid-area: player2;
+    background-color: rgb(255, 69, 69);
+}
+
+@media (min-width:762px) {
+    .game-layout {
+        grid-template-areas: "player1 player2";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}

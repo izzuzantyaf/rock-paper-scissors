@@ -1,0 +1,61 @@
+.overlay {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.username-form-box {
+    width: 85vw;
+    border-radius: 0.8em;
+    padding: 1em;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.username-form-box .username-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+}
+
+.username-form-box .username-form span.versus {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.username-form-box .username-form input[type='text'] {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(233, 233, 233);
+    padding: 15px 10px 15px 10px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.username-form-box .username-form label {
+    display: block;
+    text-align: left;
+}
+
+.username-form-box button {
+    font-size: 15px;
+}
+
+.username-form-box button.start {
+    background-color: rgb(40, 90, 255);
+    color: white;
+    width: 40%;
+    margin-top: 30px;
+}
+
+@media (min-width:762px) {
+    .username-form-box {
+        width: 30vw;
+    }
+}

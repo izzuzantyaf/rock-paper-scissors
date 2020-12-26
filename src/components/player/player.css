@@ -1,0 +1,60 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.player img {
+    width: 150px;
+}
+
+.player .username {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.player1 img {
+    transform: rotateZ(180deg);
+}
+
+.play-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 0.8em;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+@media (min-width:762px) {
+
+    .player .username {
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 2rem;
+    }
+
+    .player img {
+        width: 200px;
+    }
+
+    .player1 img {
+        transform: rotateZ(90deg) rotateY(180deg);
+    }
+
+    .player2 img {
+        transform: rotateZ(-90deg);
+    }
+
+}
